@@ -1,0 +1,2 @@
+model,best_adapter_path,best_step,validation_mcc,validation_f1,selection_metric,selection_tiebreaker
+Qwen2.5-Coder-3B-Instruct QLoRA,/kaggle/working/code_smell_llm_full/checkpoints/Qwen2.5-Coder-3B-Instruct/adapter,1974,0.9022708834524941,0.9487970388648982,mcc,f1

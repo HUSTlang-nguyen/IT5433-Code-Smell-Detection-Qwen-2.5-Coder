@@ -5,7 +5,6 @@ reference lab practice - Code Smell Detection.zip
 *.zip
 
 # Kaggle/local experiment outputs
-eval_outputs_bundle/
 code_smell_llm/
 code_smell_llm_work/
 outputs/
