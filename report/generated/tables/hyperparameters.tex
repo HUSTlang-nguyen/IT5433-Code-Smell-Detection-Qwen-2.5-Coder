@@ -1,0 +1,23 @@
+\begin{table}[H]
+\centering
+\begin{tabular}{ll}
+\toprule
+Setting & Value \\
+\midrule
+Base model & Qwen2.5-Coder-3B-Instruct \\
+Fine-tuning method & QLoRA, 4-bit NF4 \\
+Maximum sequence length & 2048 tokens \\
+LoRA rank / alpha / dropout & 16 / 32 / 0.05 \\
+LoRA target modules & attention and MLP projection layers \\
+Epochs & 2 \\
+Per-device batch size & 2 during resumed run \\
+Gradient accumulation & 4 steps \\
+Effective batch size & 8 \\
+Learning rate & 2e-4 \\
+Checkpoint selection & validation MCC, then F1 \\
+Test threshold & YES probability >= 0.5 \\
+\bottomrule
+\end{tabular}
+\caption{Main Qwen2.5-Coder-3B QLoRA settings.}
+\label{tab:hyperparameters}
+\end{table}

@@ -1,0 +1,16 @@
+\begin{table}[H]
+\centering
+\begin{tabular}{lrrrr}
+\toprule
+Candidate & Step & Validation F1 & Validation MCC & Validation ROC-AUC \\
+\midrule
+checkpoint-1400 & 1400 & 0.947 & 0.898 & 0.989 \\
+checkpoint-1600 & 1600 & 0.931 & 0.875 & 0.989 \\
+checkpoint-1800 & 1800 & 0.942 & 0.890 & 0.990 \\
+adapter & 1974 & 0.949 & 0.902 & 0.991 \\
+checkpoint-1974 & 1974 & 0.949 & 0.902 & 0.991 \\
+\bottomrule
+\end{tabular}
+\caption{Validation-based checkpoint selection.}
+\label{tab:checkpoint-selection}
+\end{table}

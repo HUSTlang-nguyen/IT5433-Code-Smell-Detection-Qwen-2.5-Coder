@@ -1,0 +1,34 @@
+# Local datasets and large archives
+data/
+reference lab practice - Code Smell Detection.zip
+*.7z
+*.zip
+
+# Kaggle/local experiment outputs
+eval_outputs_bundle/
+code_smell_llm/
+code_smell_llm_work/
+outputs/
+checkpoints/
+
+# Model artifacts
+*.safetensors
+*.bin
+*.pt
+*.pth
+adapter/
+
+# Python/Jupyter caches
+__pycache__/
+.ipynb_checkpoints/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.bbl
+*.blg
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz

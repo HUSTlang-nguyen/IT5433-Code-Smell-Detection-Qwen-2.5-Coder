@@ -1,0 +1,16 @@
+\begin{table}[H]
+\centering
+\footnotesize
+\begin{tabular}{@{}llrP{0.50\textwidth}@{}}
+\toprule
+Type & Smell & Score & Interpretable Pattern \\
+\midrule
+FN & FeatureEnvy & 0.407 & Network routing logic uses external request and node objects, but the local snippet looks like ordinary dispatch code; the cross-object dependency signal is subtle. \\
+FN & MultifacetedAbstraction & 0.202 & A generated queue implementation contains low-level mechanics, but responsibility mixing is not obvious from the local fragment. \\
+FP & FeatureEnvy & 0.915 & A visualization UI panel references model and training objects, which can resemble heavy dependence on external classes. \\
+FP & MultifacetedAbstraction & 0.679 & A reader-options UI class contains many configuration constants and controls, making it resemble a multi-responsibility abstraction. \\
+\bottomrule
+\end{tabular}
+\caption{Representative Qwen 3B prediction errors.}
+\label{tab:qwen-error-examples}
+\end{table}

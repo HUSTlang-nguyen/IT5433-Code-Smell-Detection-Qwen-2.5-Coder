@@ -1,0 +1,21 @@
+\begin{table}[H]
+\centering
+\small
+\begin{tabular}{@{}lP{0.62\textwidth}@{}}
+\toprule
+Field & Value \\
+\midrule
+Dataset & DeepLearningSmells Java raw source archives \\
+Input type & Raw source code snippets, not pre-tokenized files \\
+Smells & ComplexMethod; ComplexConditional; FeatureEnvy; MultifacetedAbstraction \\
+Split protocol & 70/15/15 fixed split after duplicate removal and balanced sampling \\
+Seed & 42 \\
+Train / validation / test size & 7896 / 1687 / 1700 \\
+Models & TF-IDF + LinearSVC; Qwen2.5-Coder-3B-Instruct QLoRA \\
+Checkpoint selection & Best validation MCC, then validation F1 \\
+Hardware & Kaggle GPU environment with T4 GPUs \\
+\bottomrule
+\end{tabular}
+\caption{Experiment metadata for group-level comparison.}
+\label{tab:experiment-metadata}
+\end{table}
